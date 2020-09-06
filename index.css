@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* これが一定期間で画像が変化する。予定 */
+.header-bg {
+  height: 100vh; /* 全画面表示 */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(img/owner.jpg);
+  /* mac or win でここの画像のパスを直して若しくは絶対パスとかで書き直して */
+}
+
+.header-bg::before {
+  /* 透過した黒を上から重ねるイメージ */
+  background-color: rgba(48, 35, 35, 0.4);
+  /* background-color: rgb(97, 88, 88); */
+  /* 自由に位置指定 */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: " ";
+}
+
+.header-div h3 {
+  color: #ffffff;
+  font-size: 25px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  /*重なりの順番を指定できます。*/
+  z-index: 1;
+}
+
+.header-div h1 {
+  color: #ffffff;
+  font-size: 80px;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  /*重なりの順番を指定できます。*/
+  z-index: 1;
+}
+
+/* ハンバーガーアイコンに背景色をつける */
+.drawer-hamburger {
+  background: rgb(247, 88, 88);
+}
+
+/* ドロワーメニュー全体の背景色を変更 */
+.drawer-nav {
+  background: rgba(255, 255, 255, 0.918);
+}
+
+/* コンテンツ部分にかかる半透明の黒色の変更 */
+.drawer-overlay {
+  background-color: rgba(51, 50, 50, 0.356);
+}
+
+/* 大衆酒場 Tsujichoのメニューはこちら */
+.font-weight-bold-1 {
+  text-align: center;
+  color: #a7c95c;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 25px 0;
+}
+
+/* 画像を透過する */
+.topMenu img:hover {
+  opacity: 0.5;
+}
+
+/* .topMenu img:hover .caption {
+  opacity: 1;
+} */
+
+/* メニュー画像を横並びにする */
+.topMenu img {
+  display: inline-block;
+  width: calc(100% / 2);
+}
+
+.topMenu {
+  display: flex;
+}
+
+
+/* お座席タイプの設定 */
+.card-group{
+  display: flex;
+}
+.card-img-top{
+  display: inline-block;
+  width: calc(100% / 3);
+}
+
