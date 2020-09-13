@@ -15,7 +15,7 @@ body {
 
 .header-bg::before {
   /* 透過した黒を上から重ねるイメージ */
-  background-color: rgba(48, 35, 35, 0.4);
+  /* background-color: rgba(48, 35, 35, 0.4); */
   /* background-color: rgb(97, 88, 88); */
   /* 自由に位置指定 */
   position: absolute;
@@ -52,14 +52,14 @@ body {
 }
 
 /* ドロワーメニュー全体の背景色を変更 */
-.drawer-nav {
+/* .drawer-nav {
   background: rgba(255, 255, 255, 0.918);
-}
+} */
 
 /* コンテンツ部分にかかる半透明の黒色の変更 */
-.drawer-overlay {
+/* .drawer-overlay {
   background-color: rgba(51, 50, 50, 0.356);
-}
+} */
 
 /* 大衆酒場 Tsujichoのメニューはこちら */
 .font-weight-bold-1 {
@@ -90,13 +90,11 @@ body {
   display: flex;
 }
 
-
 /* お座席タイプの設定 */
-.card-group{
+.card-group {
   display: flex;
 }
-.card-img-top{
+.card-img-top {
   display: inline-block;
   width: calc(100% / 3);
 }
-
