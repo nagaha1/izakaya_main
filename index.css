@@ -26,6 +26,26 @@ body {
   content: " ";
 }
 
+/* 文字をなぞる実装 */
+/* .header-div h3 {
+  position: relative;
+  text-align: center;
+  color: #ccc;
+}
+
+.header-div h3::after {
+  content: attr(data-txt);
+  position: absolute;
+  color: #1a1e24;
+  clip: rect(0, 0, 100px, 0);
+  transition: clip 1.5s linear;
+}
+
+.header-div h3:hover::after {
+  clip: rect(0px, 300px, 100px, 0); */
+/* } */
+/* 文字をなぞる実装 */
+
 .header-div h3 {
   color: #ffffff;
   font-size: 25px;
@@ -34,6 +54,18 @@ body {
   left: 10px;
   /*重なりの順番を指定できます。*/
   z-index: 1;
+}
+
+.header-div h3::after {
+  content: attr(data-txt);
+  position: absolute;
+  color: #1a1e24;
+  clip: rect(0, 0, 100px, 0);
+  transition: clip 1.5s linear;
+}
+
+.header-div h3:hover::after {
+  clip: rect(0px, 300px, 100px, 0);
 }
 
 .header-div h1 {
