@@ -15,7 +15,7 @@ body {
 
 .header-bg::before {
   /* 透過した黒を上から重ねるイメージ */
-  /* background-color: rgba(48, 35, 35, 0.4); */
+  background-color: rgba(48, 35, 35, 0.4);
   /* background-color: rgb(97, 88, 88); */
   /* 自由に位置指定 */
   position: absolute;
@@ -27,47 +27,35 @@ body {
 }
 
 /* 文字をなぞる実装 */
-/* .header-div h3 {
-  position: relative;
-  text-align: center;
-  color: #ccc;
-}
-
-.header-div h3::after {
-  content: attr(data-txt);
-  position: absolute;
-  color: #1a1e24;
-  clip: rect(0, 0, 100px, 0);
-  transition: clip 1.5s linear;
-}
-
-.header-div h3:hover::after {
-  clip: rect(0px, 300px, 100px, 0); */
-/* } */
-/* 文字をなぞる実装 */
-
 .header-div h3 {
-  color: #ffffff;
-  font-size: 25px;
   position: absolute;
   top: 10px;
   left: 10px;
-  /*重なりの順番を指定できます。*/
+  font-size: 25px;
+  /* text-align: center; */
+  color: #ffffff;
   z-index: 1;
 }
 
 .header-div h3::after {
   content: attr(data-txt);
   position: absolute;
-  color: #1a1e24;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  color: #005cca;
   clip: rect(0, 0, 100px, 0);
-  transition: clip 1.5s linear;
+  transition: clip 0.8s linear;
 }
 
-.header-div h3:hover::after {
-  clip: rect(0px, 300px, 100px, 0);
+.txt-clor-chenge h3:hover::after {
+  clip: rect(0, 300px, 100px, 0);
 }
+/* 文字をなぞる実装 */
 
+/* -------------------------------------------------------------- */
+
+/* h3がhoverされたら、h1も同じようにを実装する */
 .header-div h1 {
   color: #ffffff;
   font-size: 80px;
@@ -77,6 +65,22 @@ body {
   /*重なりの順番を指定できます。*/
   z-index: 1;
 }
+
+.header-div h1::after {
+  content: attr(data-txt);
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  color: #005cca;
+  clip: rect(0, 0, 100px, 0);
+  transition: clip 0.8s linear;
+}
+
+.txt-clor-chenge :hover::after {
+  clip: rect(0, 1000px, 200px, 0);
+}
+/* h1も同じように実装↑ */
 
 /* ハンバーガーアイコンに背景色をつける */
 .drawer-hamburger {
