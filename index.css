@@ -1,7 +1,54 @@
 body {
   margin: 0;
   padding: 0;
+  position: relative;
+  cursor: none;
 }
+
+/* カーソルの実装 */
+.cursor,
+.follower {
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.follower {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(254, 0, 0);
+  z-indes: 1000;
+  -webkit-transition: -webkit-transform ease 0.1s;
+  transition: -webkit-transform ease 0.1s;
+  transition: transform ease 0.1s;
+  transition: transform ease 0.1s, -webkit-transform ease 0.1s;
+  text-align: center;
+}
+
+.follower span {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+.follower.is-active {
+  -webkit-transform: scale(3);
+  transform: scale(3);
+}
+/* カーソルの実装 */
 
 /* これが一定期間で画像が変化する。予定 */
 .header-bg {
@@ -27,17 +74,18 @@ body {
 }
 
 /* 文字をなぞる実装 */
-.header-div h3 {
+/*将来的には値が１だったら文字をなぞるとか、なぞらないとか実装できるようにする*/
+/* .header-div h3 {
   position: absolute;
   top: 10px;
   left: 10px;
-  font-size: 25px;
-  /* text-align: center; */
-  color: #ffffff;
+  font-size: 25px; */
+/* text-align: center; */
+/* color: #ffffff;
   z-index: 1;
-}
+} */
 
-.header-div h3::after {
+/* .header-div h3::after {
   content: attr(data-txt);
   position: absolute;
   left: 0;
@@ -50,7 +98,7 @@ body {
 
 .txt-clor-chenge h3:hover::after {
   clip: rect(0, 300px, 100px, 0);
-}
+} */
 /* 文字をなぞる実装 */
 
 /* -------------------------------------------------------------- */
