@@ -35,12 +35,16 @@
     <!-- カーソルが追尾すために必要 -->
 
     <div class="header-div">
-      <div class="txt-clor-chenge">
-        <h3 data-txt="地元の人が集うお店！">地元の人が集うお店！</h3>
-        <h1 data-txt="大衆酒場Tsujicho">大衆酒場Tsujicho</h1>
-      </div>
+      
       <!-- モーダルウィンドウの実装 -->
       <header Class="header-bg" role="banner">
+        <!-- ヘッダーのテキスト -->
+        <div class="header-text">
+          <h3 data-txt="地元の人が集うお店！">地元の人が集うお店！</h3>
+          <h1 data-txt="大衆酒場Tsujicho">大衆酒場Tsujicho</h1>
+        </div>
+        <!-- ヘッダーのテキスト -->
+        
         <!-- ハンバーガーボタン -->
         <button type="button" class="drawer-toggle drawer-hamburger">
           <span class="sr-only">toggle navigation</span>
@@ -60,7 +64,10 @@
             </li>
           </ul>
         </nav>
+        
       </header>
+      <!-- モーダルウィンドウの実装 -->
+
     </div>
 
     <!-- <hr /> -->
@@ -73,7 +80,9 @@
       <p class="drink-menu-text">ドリンクメニュー</p>
     </div> -->
     <div class="topMenu">
-      <img src="img\img_menu\drinks\all-drinks.jpg" alt="" />
+      <div class="topMenuDrink">
+        <img src="img\img_menu\drinks\all-drinks.jpg" alt="" />
+      </div>
 
       <!-- このへんに文字を追加してhoverしたら文字もでてくるようにする。 -->
       <img src="img\img_menu\foods\grill_3\asari_3.jpg" alt="" />
@@ -180,18 +189,17 @@
       </div>
   </div>
 
-
-
-
   </div>
 
 
 
-  <!-- そうではなくて、画像が切り替わる時に波打って欲しい。 -->
+<!-- そうではなくて、画像が切り替わる時に波打って欲しい。 -->
 <!-- jsのリンク -->
 <!-- 波が画面の一番上に実装されているのでハンバーガーメニューの色がおかしくなっている。ハンバーガーメニューを一番上にする -->
     <script src="jquery.ripples.js"></script>
-<!-- jsのリンク -->
+<!-- jsのリンク カーソルが追尾するjs-->
     <script type="text/javascript" src="menu.js"></script>
+<!-- jsのリンク カーソルが追尾するjs-->
+
   </body>
 </html>

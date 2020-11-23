@@ -2,10 +2,12 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
-  cursor: none;
+  /* cursor: none; */
 }
 
+/*カーソルが追尾するcss部分*/
 /* カーソルの実装 */
+/*
 .cursor,
 .follower {
   border-radius: 50%;
@@ -48,7 +50,9 @@ body {
   -webkit-transform: scale(3);
   transform: scale(3);
 }
+*/
 /* カーソルの実装 */
+/*カーソルが追尾するcss部分*/
 
 /* これが一定期間で画像が変化する。予定 */
 .header-bg {
@@ -104,17 +108,17 @@ body {
 /* -------------------------------------------------------------- */
 
 /* h3がhoverされたら、h1も同じようにを実装する */
-.header-div h1 {
+/* .header-div h1 {
   color: #ffffff;
   font-size: 80px;
   position: absolute;
   top: 20px;
   left: 10px;
   /*重なりの順番を指定できます。*/
-  z-index: 1;
-}
+/* z-index: 1;
+} */
 
-.header-div h1::after {
+/* .header-div h1::after {
   content: attr(data-txt);
   position: absolute;
   left: 0;
@@ -127,9 +131,20 @@ body {
 
 .txt-clor-chenge :hover::after {
   clip: rect(0, 1000px, 200px, 0);
-}
+} */
 /* h1も同じように実装↑ */
 /* -------------------------------------------------------------- */
+
+/* ヘッダーtextの装飾 */
+.header-text {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 25px;
+  color: #ffffff;
+  z-index: 1;
+}
+/* ヘッダーtextの装飾 */
 
 /* ハンバーガーアイコンに背景色をつける */
 .drawer-hamburger {
@@ -166,13 +181,16 @@ body {
 } */
 
 /* メニュー画像を横並びにする */
-.topMenu img {
+/* .topMenu img {
   display: inline-block;
   width: calc(100% / 2);
-}
+} */
 
-.topMenu {
+.topMenuDrink {
+  background-size: cover;
   display: flex;
+  padding: 15px;
+  width: calc(100% / 2);
 }
 
 /* お座席タイプの設定 */
