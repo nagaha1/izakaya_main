@@ -171,33 +171,36 @@ body {
   margin: 25px 0;
 }
 
-/* 画像を透過する */
-.topMenu img:hover {
-  opacity: 0.5;
-}
 
-/* .topMenu img:hover .caption {
-  opacity: 1;
-} */
 
-/* メニュー画像を横並びにする */
-/* .topMenu img {
-  display: inline-block;
-  width: calc(100% / 2);
-} */
-
-.topMenuDrink {
-  background-size: cover;
+/*topMenuを横並びにする*/
+.TopMenu{
   display: flex;
-  padding: 15px;
-  width: calc(100% / 2);
 }
+
+.TopMenu img{
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+/*topMenuを横並びにする*/
+
+
+
 
 /* お座席タイプの設定 */
 .card-group {
   display: flex;
 }
 .card-img-top {
-  display: inline-block;
-  width: calc(100% / 3);
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
 }
+
+
+/* 画像を透過する */
+.TopMenu img:hover ,.card-group img:hover{
+  opacity: 0.5;
+}
+/* 画像を透過する */
