@@ -172,7 +172,6 @@ body {
 }
 
 
-
 /*topMenuを横並びにする*/
 .TopMenu{
   display: flex;
@@ -184,8 +183,6 @@ body {
   box-sizing: border-box;
 }
 /*topMenuを横並びにする*/
-
-
 
 
 /* お座席タイプの設定 */
@@ -204,3 +201,14 @@ body {
   opacity: 0.5;
 }
 /* 画像を透過する */
+
+.aaa,.test{
+  display: flex;
+}
+
+
+.shop_map h3{
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+}
