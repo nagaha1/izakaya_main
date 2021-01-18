@@ -215,29 +215,74 @@ body {
 }
 
 
+/* info text */
 .Info_Owner{
-  /* display: block; */
-  /* line-height:0; */
-  position:absolute;
   width: 100%;
+}
+
+.Info_info{
+  font-size: 30px;
+  margin: 0 auto 0 0;
 }
 
 .Info_text{
   width: 100%;
-  background-color:rgba(36, 162, 247, 0.856);
-  color: #ffffff;
-  margin-top: 0;
+  /* background-color:rgba(36, 162, 247, 0.856); */
+  /* color: #ffffff; */
+  margin-top: -20px;
+  font-size: 20px;
 }
 
+.Info_text ul{
+  margin-top: -20px;
+}
+/* info text */
 
+
+/* 予約ページ お客様の声・写真 */
+.child{
+  display: inline-block;
+  position: relative;
+}
+
+.rese{
+  margin-left: 10px;
+}
+
+.rese p{
+  position: absolute;
+  top: 30px;
+  left: 0;
+  color: chartreuse;
+  font-size: 20px;
+}
+
+.cs_photo{
+  margin-left: 20px;
+}
+
+.cs_photo p{
+  position: absolute;
+  top: 30px;
+  left: 0;
+  color: chartreuse;
+  font-size: 20px;
+} 
+
+/* 画像を透過する */
+.rese img:hover ,.cs_photo img:hover{
+  opacity: 0.5;
+}
+
+/* 予約ページ お客様の声・写真 */
+
+
+/* オーナの声 */
 .Owner_Photo_voice{
   display: flex;
   position:relative;
-  top:-16px;  
+  margin-top: 10px;
 }
-
-
-
 
 .Owner_Photo::before{
     content: '';
@@ -249,35 +294,51 @@ body {
     display:block
 }
 
-
 .owner_voice{
-  background-color:rgba(1, 93, 155, 0.856);
-  color: #ffffff;
+  /* background-color:rgba(1, 93, 155, 0.856); */
   width:  100%;
   height: 300px;
-  margin-bottom: 0;
 }
+
+.owner_voice h3{
+  font-size: 40px;
+  margin-top: 17px;
+}
+
+.voice_1{
+  font-size: 20px;
+  margin-top: -50px;
+}
+.voice_2{
+  font-size: 20px;
+  margin-top: -20px;
+}
+/* オーナの声 */
+
 
 
 /* footer */
 footer{
   position: absolute;
-  background-color: #58a9ef;
+  /* background-color: #58a9ef; */
   width: 100%;
+  margin-top: -10px;
 }
 
-footer a{
+footer li{
   display: inline-block;
   background-color: rgb(0, 204, 255);
   transition: all 0.2s;
-  border-radius: 30px;  
+  border-radius: 80px;  
+  list-style: none;
 }
+
 /* 要素をhoverしたとき */
-footer a:hover{
+footer li:hover{
   background-color: azure;
 }
 /* 要素をクリックしたとき */
-footer a:active{
+footer li:active{
   position: relative;
   top:-6px;
   box-shadow: 0px 10px #000000;
@@ -289,6 +350,6 @@ footer a:active{
 
 .tran_mng{
   display: inline-block;
-  /* text-align: right; */
-  margin-left: auto;
+  text-align: right;
 }
+/* footer */

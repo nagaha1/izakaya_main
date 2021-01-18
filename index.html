@@ -54,14 +54,21 @@
         <nav class="drawer-nav" role="navigation">
           <ul class="drawer-menu">
             <li><a class="drawer-brand" href="#">大衆酒場 Tsujicho</a></li>
-            <li><a class="drawer-menu-item" href="#menu">メニュー</a></li>
+            <li><a class="drawer-menu-item" href="#menu">ドリンクメニュー</a></li>
+            <li><a class="drawer-menu-item" href="#menu">フードメニュー</a></li>
+            <li><a class="drawer-menu-item" href="#menu">季節のメニュー</a></li>
             <li><a class="drawer-menu-item" href="#info">インフォ</a></li>
             <li>
-              <a class="drawer-menu-item" href="#modal-reservation">予約</a>
+              <a class="drawer-menu-item" href="#modal-reservation">予約フォーム</a>
             </li>
+            <li><a class="drawer-menu-item" href="#menu">お客様の声・写真</a></li>
+            <li><a class="drawer-menu-item" href="#menu">採用情報</a></li>
             <li>
-              <a class="drawer-menu-item" href="#modal-login">ログイン</a>
+              <a class="drawer-menu-item" href="#modal-login">ログイン(管理画面)</a>
             </li>
+            <li><a class="drawer-menu-item" href="#">TOPへ</a></li>
+
+
           </ul>
         </nav>
         
@@ -73,30 +80,11 @@
     <!-- <hr /> -->
     <h2 class="font-weight-bold-1">大衆酒場 Tsujichoのメニューはこちら</h2>
 
-    <!-- 仮で線を儲ける -->
-    <!-- <hr /> -->
-    <!-- <div class="topMenuText">
-      <p class="food-menu-text">フードメニュー</p>
-      <p class="drink-menu-text">ドリンクメニュー</p>
-    </div> -->
-
-    <!-- <ul class="topMenu">
-      <li>
-        <a href="リンク先のURL追加よてい"><img src="img\img_menu\drinks\all-drinks.jpg" alt="ドリンクメーニュー" /></a>
-      </li>
-      <li>
-        <a href="リンク先のURL追加よてい">
-          <img src="img\img_menu\foods\grill_3\asari_3.jpg" alt="フードメニュー" />
-        </a>
-      </li>
-    </ul> -->
-
     <div class="TopMenu">
-      <a href="リンク先のURL追加よてい"><img  src="img\img_menu\drinks\all-drinks.jpg" alt="ドリンクメーニュー" /></a>
-      <a href="リンク先のURL追加よてい"><img  src="img\img_menu\foods\grill_3\asari_3.jpg" alt="フードメニュー" /></a>
+      <a href="food.html"><img  src="img\img_menu\drinks\all-drinks.jpg" alt="ドリンクメーニュー" /></a>
+      <a href="food.html"><img  src="img\img_menu\foods\grill_3\asari_3.jpg" alt="フードメニュー" /></a>
+      <a href="food.html"><img  src="img\img_menu\foods\grill_3\asari_3.jpg" alt="季節のメニュー" /></a>
     </div>
-
-<!-- <hr /> -->
 
 
   <!-- Layout Section -->
@@ -156,10 +144,11 @@
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d894.8398132831328!2d127.67119046837969!3d26.21751407989313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e569362dfa0a21%3A0xd2de2cefc26a77bd!2z5aSn6KGG6YWS5aC0IFRTVUpJQ0hP!5e0!3m2!1sja!2sjp!4v1570891315476!5m2!1sja!2sjp" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 </div>
 
-  <!-- このへんの実装がうまくいってないです。 -->
-<!-- <div class="Info_Owner">
+
+ <!-- Infomation Section -->
+<div class="Info_Owner">
   <div class="Info_text">
-    <h3>Info</h3>          
+    <h3 id="info"><p class="Info_info">Info</p></h3>          
     <ul>
         <li>電話 : 090-1942-9814</li>
         <li>住所 : 那覇市辻2-6-11</li>
@@ -167,30 +156,51 @@
         <li>最寄りバス停 : 那覇バス「上之蔵」バス停より 徒歩約2分</li>
     </ul>
   </div>
-  <div class="Owner_Photo_voice" >
-    <div class="Owner_Photo">
-      <a href="#">
-          <img src="img/owner.jpg" alt="Owner's photo Coming Soon" width="400" height="300">
-      </a>
-    </div>
-    <div class="owner_voice">
-      <h3>owner's voice</h3>
-      <p>僕はこの地域で生まれ育ち、この地域が大好きです。</p>
-      <p>地元の人も観光やビジネスで来られた方もこの地域に縁がある方が気軽に集えるお店にしていきたいので、</p>
-      <p>お近くに来られた際はぜひご来店ください。</p>
-    </div>
+</div>  
+
+<div class="info_peges">
+  <div class="child rese">
+    <a herf="#">
+      <img src="img/owner.jpg" alt="reservation photo Coming Soon" width="250" height="80" border="1px">
+      <p>予約ページ</p>
+    </a>
   </div>
-</div> -->
+  <div class="child cs_photo">
+    <a herf="#">
+      <img src="img/owner.jpg" alt="cs_photo photo Coming Soon" width="280" height="80" border="1px">
+      <p>お客様の声・写真</p>
+    </a>
+  </div>
+</div>
+
+
+<div class="Owner_Photo_voice" >
+  <div class="Owner_Photo">
+    <a href="#">
+        <img src="img/owner.jpg" alt="Owner's photo Coming Soon" width="400" height="300" border="1px">
+    </a>
+  </div>
+  <div class="owner_voice">
+    <h3>owner's voice</h3>
+    <p class="voice_1">僕はこの地域で生まれ育ち、この地域が大好きです。</p>
+    <p class="voice_2">地元の人も観光やビジネスで来られた方もこの地域に縁がある方が</p>
+    <p class="voice_2">気軽に集えるお店にしていきたいので、</p>
+    <p class="voice_2">お近くに来られた際はぜひご来店ください。</p>
+  </div>
+</div>
 
 
 <!-- footer -->
 <footer>
-  <a class="btn tran_top"><p>TOPへ</p></a>
-  <a class="btn tran_res"><p>予約フォーム</p></a>
-  <a class="btn tran_inq"><p>お問い合わせフォーム</p></a>
-  <a class="btn tran_rec"><p>採用情報</p></a>
-  <a class="tran_mng"><p>管理画面</p></a>
+  <ul>
+    <li class="btn tran_top"><a href="#"><p>TOPへ</p></a></li>
+    <li class="btn tran_res"><p>予約フォーム</p></li>
+    <li class="btn tran_inq"><p>お問い合わせフォーム</p></li>
+    <li class="btn tran_rec"><p>採用情報</p></li>
+    <li class="btn tran_mng"><p>管理画面</p></li>
+  </ul>
 </footer>
+
 
 <!-- そうではなくて、画像が切り替わる時に波打って欲しい。 -->
 <!-- jsのリンク -->
