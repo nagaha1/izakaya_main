@@ -24,6 +24,8 @@
 
     <!-- TweenMaxのCDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+
+    
     <title>大衆酒場 Tsujicho</title>
   </head>
 
@@ -95,7 +97,7 @@
   <div class="card-group">
 
       <div class="card">
-          <img class="card-img-top" src="img/img_layout/table1.jpg" alt="カウンター">
+          <img class="card-img-top" src="img/img_layout/table1.jpg" id="img-zasiki_1" alt="カウンター">
           <div class="card-body">
             <h4 class="card-title">カウンター</h4>
             <p class="card-text">1〜3名様にオススメです</p>
@@ -103,7 +105,7 @@
       </div>
 
       <div class="card">
-          <img class="card-img-top" src="img/img_layout/table2.jpg" alt="テーブル席">
+          <img class="card-img-top" src="img/img_layout/table2.jpg" id="img-zasiki_2" alt="テーブル席">
           <div class="card-body">
             <h4 class="card-title">テーブル席</h4>
             <p class="card-text">2〜8名様までご対応可能です</p>
@@ -111,7 +113,7 @@
       </div>
       
       <div class="card">
-        <img class="card-img-top" src="img/img_layout/table3.jpg" alt="お座敷 2~4名掛け">
+        <img class="card-img-top" src="img/img_layout/table3.jpg" id="img-zasiki_3" alt="お座敷 2~4名掛け">
         <div class="card-body">
           <h4 class="card-title">お座敷</h4>
           <p class="card-text">2〜4名様までご対応可能です</p>
@@ -119,7 +121,7 @@
       </div>
 
       <div class="card">
-        <img class="card-img-top" src="img/img_layout/table4.jpg" alt="お座敷 4~16名掛け">
+        <img class="card-img-top" src="img/img_layout/table4.jpg" id="img-zasiki_4" alt="お座敷 4~16名掛け">
         <div class="card-body">
           <h4 class="card-title">お座敷</h4>
           <p class="card-text">4〜16名様までご対応可能です</p>
@@ -208,6 +210,19 @@
     <script type="text/javascript" src="menu.js"></script>
 <!-- jsのリンク カーソルが追尾するjs-->
 
+<!-- zoomingのライブラリを呼び出し -->
+<!-- うまく実装できないので後回し -->
+    <script src="zooming/zooming.min.js"></script>
+    <script>
+      const defaultZooming = new Zooming()
+      document.addEventListener('DOMContentLoaded', function () {
+      defaultZooming.listen('#img-zasiki_1')
+      defaultZooming.listen('#img-zasiki_2')
+      defaultZooming.listen('#img-zasiki_3')
+      defaultZooming.listen('#img-zasiki_4')
+      })
+    </script>
+<!-- zoomingのライブラリを呼び出し -->
 
 
   </body>
