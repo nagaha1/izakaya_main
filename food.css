@@ -1,20 +1,31 @@
 
-.menu_table{
+.Menu_text{
     background-color: chartreuse;
     width: 100%;
 }
 
-
-.menu{
-    display: inline-block;
-    background-color: rgb(0, 204, 255);
-    transition: all 0.2s;
-    border-radius: 20px;  
-    margin-left: 300px;
-    padding: 10px 50px 10px 50px;
+/*Menu_tableを横並びにする*/
+.Menu_table{
+  display: flex;
+  margin-top: -19px;
+  
 }
 
- /* 要素をhoverしたとき */
+.Menu_table .menu{
+  width: 100%;
+  margin: 10px 50px 0px;
+  background-color: rgb(0, 204, 255);
+  transition: all 0.2s;
+  border-radius: 20px;  
+  box-sizing: border-box;
+}
+
+.menu h3{
+  text-align: center;
+}
+/*Menu_table*/
+
+/* 要素をhoverしたとき */
 .menu:hover{
   background-color: azure;
 }
@@ -26,11 +37,73 @@
   box-shadow: 0px 10px #000000;
 }
 
+.font-weight-bold-1 {
+  text-align: center;
+  color: #a7c95c;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 25px 0;
+}
 
+/* 線上に文字 */
+.text-divider {
+  display: flex;
+  align-items: center;
+  --text-divider-gap: 2rem;
+}
+.text-divider::before,
+.text-divider::after {
+  content: ' ';
+  height: 1px;
+  background-color: rgb(170, 19, 19);
+  flex-grow: 1;
+}
+.text-divider::before {
+  margin-right: var(--text-divider-gap);
+}
+.text-divider::after {
+  margin-left: var(--text-divider-gap);
+}
 
+.text-divider h3{
+  color: rgb(170, 19, 19);
+}
+/* 線上に文字 */
 
+.food_menues{
+  width: 100%;
+  padding: 20px;
+}
 
+/*xx_Menuを横並びにする*/
+.Tumami_Menu,
+.Gurir_Menu,
+.Gurir_Menu_2,
+.Kusi_Menu{
+  display: flex;
+  margin-top: -19px;
+}
 
+.Tumami_Menu img,
+.Gurir_Menu img,
+.Gurir_Menu_2 img,
+.Kusi_Menu img{
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: -15px;
+}
+/*xx_Menuを横並びにする*/
+
+/* 画像を透過する */
+.Tumami_Menu img:hover,
+.Gurir_Menu img:hover,
+.Gurir_Menu_2 img:hover,
+.Kusi_Menu img:hover{
+  opacity: 0.5;
+}
+/* 画像を透過する */
 
 
 
@@ -40,33 +113,58 @@ footer{
     /* background-color: #58a9ef; */
     width: 100%;
     margin-top: -10px;
+}
+
+footer li{
+  display: inline-block;
+  background-color: rgb(0, 204, 255);
+  transition: all 0.2s;
+  border-radius: 80px;  
+  list-style: none;
+}
+
+/* 要素をhoverしたとき */
+footer li:hover{
+  background-color: azure;
+}
+/* 要素をクリックしたとき */
+footer li:active{
+  position: relative;
+  top:-6px;
+  box-shadow: 0px 10px #000000;
+}
+
+.btn {
+  padding: 0px 30px 0px 30px;
+}
+
+.tran_mng{
+  display: inline-block;
+  text-align: right;
+}
+/* footer */
+
+
+
+/* 以下メディアクエリ */
+
+/* iPhone 縦 */
+/* media クエリは小さい順に上から書かないと反映されない？  */
+@media screen and (min-width:480px) { 
+/*　for iPhone Landscape　(iPhone 横)　*/
+  .Menu_text{
+    background-color: blue;
+    width: 100%;
   }
-  
-  footer li{
-    display: inline-block;
-    background-color: rgb(0, 204, 255);
-    transition: all 0.2s;
-    border-radius: 80px;  
-    list-style: none;
+
+}
+
+
+@media screen and (min-width:1024px) {
+/*　for PC　*/
+  .Menu_text{
+    background-color: chartreuse;
+    width: 100%;
   }
-  
-  /* 要素をhoverしたとき */
-  footer li:hover{
-    background-color: azure;
-  }
-  /* 要素をクリックしたとき */
-  footer li:active{
-    position: relative;
-    top:-6px;
-    box-shadow: 0px 10px #000000;
-  }
-  
-  .btn {
-    padding: 0px 30px 0px 30px;
-  }
-  
-  .tran_mng{
-    display: inline-block;
-    text-align: right;
-  }
-  /* footer */
+
+}

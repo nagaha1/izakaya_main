@@ -353,3 +353,30 @@ footer li:active{
   text-align: right;
 }
 /* footer */
+
+
+
+/* iPhone 縦 */
+/* media クエリは小さい順に上から書かないと反映されない？  */
+@media screen and (min-width:480px) {  
+  /*　for iPhone Landscape　(iPhone 横)　*/
+  .Owner_Photo_voice{
+    /* background-color: chartreuse; */
+    /* noneは要素自体を削除してしまうので、pc側でdisplayを設定する必要があります。 */
+    display: none;
+  }
+}
+
+
+/* pc 向け */
+@media screen and (min-width:800px) {
+  /*　for PC　*/
+  .Owner_Photo_voice{
+    /* background-color: black; */
+    display: flex;
+    position:relative;
+    margin-top: 10px;
+  }
+
+
+}
