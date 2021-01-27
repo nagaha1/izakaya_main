@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- header -->
+<head id="header">
+    <script>
+    $(function(){
+        $("#header").load("header.html");
+    })
+    </script>
+    <!-- headerの共通化のjsよりも下の行でページ固有のCSS（style.cssなど）を読み込みます。 -->
+    <link rel="stylesheet" href="footer.css" type="text/css" />
+</head>
+<!-- header -->
+
+<body>
+    <!-- footer -->
+    <footer>
+        <ul>
+            <li class="btn tran_top"><a href="index.html"><p>TOPへ</p></a></li>
+            <li class="btn tran_res"><a href="reservation.html"><p>予約フォーム</p></a></li>
+            <li class="btn tran_inq"><a href="inquiry.html"><p>お問い合わせフォーム</p></a></li>
+            <li class="btn tran_rec"><p>採用情報</p></li>
+            <li class="btn tran_mng"><a href="managment_login.html"><p>管理画面</p></a></li>
+        </ul>
+    </footer>
+    <!-- footer -->
+
+</body>
+</html>

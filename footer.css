@@ -1,0 +1,65 @@
+
+
+/* footer */
+footer{
+    position: absolute;
+    /* background-color: #58a9ef; */
+    width: 100%;
+    margin-top: -10px;
+}
+
+footer li{
+display: inline-block;
+background-color: rgb(0, 204, 255);
+transition: all 0.2s;
+border-radius: 80px;  
+list-style: none;
+}
+
+/* 要素をhoverしたとき */
+footer li:hover{
+background-color: azure;
+}
+/* 要素をクリックしたとき */
+footer li:active{
+position: relative;
+top:-6px;
+box-shadow: 0px 10px #000000;
+}
+
+.btn {
+padding: 0px 30px 0px 30px;
+}
+
+.tran_mng{
+display: inline-block;
+text-align: right;
+}
+/* footer */
+
+
+
+/* iPhone 縦 */
+/* media クエリは小さい順に上から書かないと反映されない？  */
+@media screen and (min-width:480px) {  
+/*　for iPhone Landscape　(iPhone 横)　*/
+.Owner_Photo_voice{
+    /* background-color: chartreuse; */
+    /* noneは要素自体を削除してしまうので、pc側でdisplayを設定する必要があります。 */
+    display: none;
+}
+
+}
+
+
+/* pc 向け */
+@media screen and (min-width:800px) {
+/*　for PC　*/
+.Owner_Photo_voice{
+    /* background-color: black; */
+    display: flex;
+    position:relative;
+    margin-top: 10px;
+}
+
+}

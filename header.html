@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+   <meta charset="utf-8" />
+   <!-- width=device-width　はデバイス幅に合わせる　shrink-to-fit=noはiOS向けの幅を調整する -->
+   <meta
+     name="viewport"
+     content="width=device-width, initial-scale=1, shrink-to-fit=no"
+   />
+
+    <!-- よくわからないが、このへんで呼び出すとうまく動作します。 -->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+   rel="stylesheet">
+
+   <!-- drawer.css -->
+   <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/css/drawer.min.css"
+   />
+   <!-- jquery & iScroll -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
+   <!-- drawer.js -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/js/drawer.min.js"></script>
+
+ 
+
+   <!-- TweenMaxのCDN -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+   <link rel="stylesheet" href="header.css" type="text/css" />
+
+</head>
+<body>
+    <!-- モーダルウィンドウの実装 -->
+    <!-- <header Class="header-bg" role="banner"> -->
+        <!-- ヘッダーのテキスト -->
+        <!-- <div class="header-text">
+          <h3 data-txt="地元の人が集うお店！">地元の人が集うお店！</h3>
+          <h1 data-txt="大衆酒場Tsujicho">大衆酒場Tsujicho</h1>
+        </div> -->
+        <!-- ヘッダーのテキスト -->
+        
+        <!-- ハンバーガーボタン -->
+        <!-- <button type="button" class="drawer-toggle drawer-hamburger">
+          <span class="sr-only">toggle navigation</span>
+          <span class="drawer-hamburger-icon"></span>
+        </button> -->
+        <!-- ナビゲーションの中身 -->
+        <!-- <nav class="drawer-nav" role="navigation">
+          <ul class="drawer-menu">
+            <li><a class="drawer-brand" href="#">大衆酒場 Tsujicho</a></li>
+            <li><a class="drawer-menu-item" href="#menu">ドリンクメニュー</a></li>
+            <li><a class="drawer-menu-item" href="food.html">フードメニュー</a></li>
+            <li><a class="drawer-menu-item" href="#menu">季節のメニュー</a></li>
+            <li><a class="drawer-menu-item" href="#info">インフォ</a></li>
+            <li>
+              <a class="drawer-menu-item" href="#modal-reservation">予約フォーム</a>
+            </li>
+            <li><a class="drawer-menu-item" href="#menu">お客様の声・写真</a></li>
+            <li><a class="drawer-menu-item" href="#menu">採用情報</a></li>
+            <li>
+              <a class="drawer-menu-item" href="#modal-login">ログイン(管理画面)</a>
+            </li>
+            <li><a class="drawer-menu-item" href="#">TOPへ</a></li>
+          </ul>
+        </nav>
+        
+      </header> -->
+
+      <header>       
+        <div class="heder-menu">
+          <span class="material-icons" id="open">list</span>
+        </div>
+
+      </header>
+
+      <div class="overlay">
+        <span class="material-icons" id="close">close</span>
+        <nav>
+          <ul>
+            <!-- この辺はDBで操作できるように今後します。 -->
+            <li><a href="#">大衆酒場 Tsujicho　　</a></li>
+            <li><a href="#menu">ドリンクメニュー</a></li>
+            <li><a href="food.html">フードメニュー</a></li>
+            <li><a href="#menu">季節のメニュー</a></li>
+            <li><a href="#info">インフォ</a></li>
+            <li><a href="#modal-reservation">予約フォーム</a></li>
+            <li><a href="#menu">お客様の声・写真</a></li>
+            <li><a href="#menu">採用情報</a></li>
+            <li><a href="#modal-login">ログイン(管理画面)</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- メディアクエリである程度のサイズを超えたら全画面でハンバーガメニューが表示されるようにします。 -->
+
+      <!-- liとaを重ね合わせるのはどうやるのだろうか -->
+
+
+
+
+
+
+
+
+      <script src="js/main.js"></script>
+
+      <!-- モーダルウィンドウの実装 -->
+        <!-- 波が画面の一番上に実装されているのでハンバーガーメニューの色がおかしくなっている。ハンバーガーメニューを一番上にする -->
+        <script src="jquery.ripples.js"></script>
+
+    <!-- jsのリンク カーソルが追尾するjs-->
+        <script type="text/javascript" src="menu.js"></script>
+    <!-- jsのリンク カーソルが追尾するjs-->
+
+
+
+</body>
+</html>

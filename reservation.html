@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,6 +23,9 @@
     </head>
 
     <body>
+        <header>
+            <div id="head"></div>
+        </header>
         <div class="Rese_text"><h1>予約フォーム</h1></div>
         
         <!-- あとはjsとバックエンド側の処理を記載します。 -->
@@ -30,15 +33,16 @@
         
 
         <!-- footer -->
-        <footer>
-            <ul>
-                <li class="btn tran_top"><a href="index.html"><p>TOPへ</p></a></li>
-                <li class="btn tran_res"><a href="reservation.html"><p>予約フォーム</p></a></li>
-                <li class="btn tran_inq"><a href="inquiry.html"><p>お問い合わせフォーム</p></a></li>
-                <li class="btn tran_rec"><p>採用情報</p></li>
-                <li class="btn tran_mng"><a href="managment_login.html"><p>管理画面</p></a></li>
-            </ul>
-        </footer>
+        <footer id="footer"></footer>
+         <!-- footer -->
+
+        <!-- id=head　id=footerにfooter.htmlの内容を呼び出しています。 -->
+        <script>
+        $(function(){
+            $("#head").load("header.html");
+            $("#footer").load("footer.html");
+        })
+        </script>
 
     </body>
 
