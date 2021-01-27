@@ -8,8 +8,6 @@ header {
     padding: 5px 5px;
 }
 
-.heder-menu {
-}
 
 .heder-menu #open {
     position: absolute;
@@ -19,6 +17,7 @@ header {
     line-height: 55px;
     cursor: pointer;
     background-color: rgb(243, 92, 92);
+    z-index: 10;
 }
 
 .heder-menu #open:hover {
@@ -95,7 +94,8 @@ header {
 }
 
 .overlay li a{
-    width: 50px;
+    /* ここのdisplay: block;でaタグのクリック範囲を広げている */
+    display: block;
     text-decoration: none;
     color: #000000;
 }

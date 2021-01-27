@@ -82,17 +82,20 @@
 .Gurir_Menu_2,
 .Kusi_Menu{
   display: flex;
-  margin-top: -19px;
+  
 }
 
 .Tumami_Menu img,
 .Gurir_Menu img,
 .Gurir_Menu_2 img,
 .Kusi_Menu img{
-  width: 100%;
-  padding: 20px;
+  width: 319.98px;
+  height: 179.53px;
+  padding: 0px;
+  margin: 0px;
   box-sizing: border-box;
-  margin-top: -15px;
+  /* margin-top: -15px; */
+  
 }
 /*xx_Menuを横並びにする*/
 

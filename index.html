@@ -35,6 +35,7 @@
     <!-- モーダルウィンドウの実装 -->
     <!-- header -->
     <header Class="header-bg" role="banner">
+      <div class="black"></div>
       <div class="header-text">
         <h3 data-txt="地元の人が集うお店！">地元の人が集うお店！</h3>
         <h1 data-txt="大衆酒場Tsujicho">大衆酒場Tsujicho</h1>
@@ -115,7 +116,7 @@
 
 
  <!-- Infomation Section -->
-<div class="Info_Owner">
+<div class="Info_Owner" id="Info_Owner">
   <div class="Info_text">
     <h3 id="info"><p class="Info_info">Info</p></h3>          
     <ul>
@@ -130,13 +131,13 @@
 <div class="info_peges">
   <div class="child rese">
     <a href="reservation.html">
-      <img src="img/owner.jpg" alt="reservation photo Coming Soon" width="250" height="80" border="1px">
+      <img src="img/owner.jpg" alt="reservation photo Coming Soon">
       <p>予約フォーム</p>
     </a>
   </div>
   <div class="child cs_photo">
     <a href="cs_photo_and_voice.html">
-      <img src="img/owner.jpg" alt="cs_photo photo Coming Soon" width="280" height="80" border="1px">
+      <img src="img/owner.jpg" alt="cs_photo photo Coming Soon">
       <p>お客様の声・写真</p>
     </a>
   </div>
@@ -146,7 +147,7 @@
 <div class="Owner_Photo_voice" >
   <div class="Owner_Photo">
     <a href="#">
-        <img src="img/owner.jpg" alt="Owner's photo Coming Soon" width="400" height="300" border="1px">
+        <img src="img/owner.jpg" alt="Owner's photo Coming Soon">
     </a>
   </div>
   <div class="owner_voice">
@@ -160,7 +161,10 @@
 
 
 <!-- footer -->
-<footer id="footer"></footer>
+<footer>
+  <div id="footer"></div>
+</footer>
+<!-- footer -->
 
 
 <!-- id=head　id=footerにfooter.htmlの内容を呼び出しています。 -->
@@ -187,10 +191,10 @@
     <script>
       const defaultZooming = new Zooming()
       document.addEventListener('DOMContentLoaded', function () {
-      defaultZooming.listen('#img-zasiki_1')
-      defaultZooming.listen('#img-zasiki_2')
-      defaultZooming.listen('#img-zasiki_3')
-      defaultZooming.listen('#img-zasiki_4')
+        defaultZooming.listen('#img-zasiki_1')
+        defaultZooming.listen('#img-zasiki_2')
+        defaultZooming.listen('#img-zasiki_3')
+        defaultZooming.listen('#img-zasiki_4')
       })
     </script>
 <!-- zoomingのライブラリを呼び出し -->
