@@ -1,4 +1,11 @@
 
+/* この大きさが指針になる */
+#menu_content {
+  width: 960px;
+  margin: 0 auto 64px;
+}
+
+
 .Menu_text{
     background-color: chartreuse;
     width: 100%;
@@ -8,7 +15,6 @@
 .Menu_table{
   display: flex;
   margin-top: -19px;
-  
 }
 
 .Menu_table .menu{
@@ -82,20 +88,19 @@
 .Gurir_Menu_2,
 .Kusi_Menu{
   display: flex;
-  
+  /* flexはこれで中央寄せにする */
+  justify-content: center;
 }
 
 .Tumami_Menu img,
 .Gurir_Menu img,
 .Gurir_Menu_2 img,
 .Kusi_Menu img{
-  width: 319.98px;
+  width: 300.98px;
   height: 179.53px;
-  padding: 0px;
+  padding: 10px;
   margin: 0px;
   box-sizing: border-box;
-  /* margin-top: -15px; */
-  
 }
 /*xx_Menuを横並びにする*/
 
